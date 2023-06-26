@@ -1,0 +1,64 @@
+/* Titles and Tags */
+.titlesAndTags {
+    margin: 0 0 20px;
+}
+
+.titlesAndTags h1, .titlesAndTags h2 {
+    color: var(--secondary);
+    font-weight: normal;
+}
+
+.titlesAndTags h1 {
+    font-size: calc(1rem + 1.4vw);
+}
+
+.titlesAndTags h2 {
+    font-size: calc(1rem + 1.1vw);
+    margin: 10px 0;
+}
+
+.titlesAndTags div:last-child {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+/* Stars and Profile */
+.starsAndProfile {
+    display: flex;
+    justify-content: space-between;
+    color: var(--secondary);
+}
+
+/* Dropdowns */
+
+.dropdowns {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+@media all and (min-width: 650px) {
+    .infos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .starsAndProfile {
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        gap: 10px;
+    }
+
+    .dropdowns {
+        flex-direction: row;
+    }
+
+    /* .starsAndProfile div:last-child img {
+        width: 75px;
+        height: 75px;
+    } */
+}
