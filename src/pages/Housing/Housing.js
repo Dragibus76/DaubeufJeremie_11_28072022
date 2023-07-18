@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams, Navigate } from 'react-router-dom';
 import datas from '../../utils/data/housing.json';
 import styles from './Housing.module.css';
 import Carousel from '../../components/Carousel/Carousel';
@@ -9,17 +9,27 @@ import Host from '../../components/Host/Host';
 import Dropdown from '../../components/Dropdown/Dropdown';
 
 export default function Housing() {
-    const navigate = useNavigate();
-    const { id } = useParams();
-    const [ house ] = datas.filter(data => data.id === id);
     
-    useEffect(() => {
-        if(house === undefined) {
-            navigate('/error-house');
-        }
-    })
+    const { id } = useParams();
+    const  house  = datas.find(data => data.id === id);
+    console.log(house);
 
-    if(typeof house === 'object') {
+    if (!house) { // if there is no match
+        return (
+            // redirect to Not found page
+            <Navigate replace to="/notfound" />
+        )
+    }
+
+    // useEffect(() => {
+    //     if(!house) {
+    //          navigate('/', {replace:true}); 
+
+            
+    //     }
+    // },[house])
+
+    
         return (
         
             <main>
@@ -52,6 +62,6 @@ export default function Housing() {
     
             </main>
         )
-    }
+    
     
 }

@@ -9,11 +9,11 @@
 }
 
 .titlesAndTags h1 {
-    font-size: calc(1rem + 1.4vw);
+    font-size: 36px;
 }
 
 .titlesAndTags h2 {
-    font-size: calc(1rem + 1.1vw);
+    font-size: 18px;
     margin: 10px 0;
 }
 

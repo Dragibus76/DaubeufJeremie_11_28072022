@@ -24,11 +24,10 @@
     flex-wrap: wrap;
     justify-content: flex-end;
     gap: 15px;
-    font-size: calc(0.5rem + 1vw);
+    font-size: 24px;
 }
 
 .link, .activeLink {
-    text-transform: uppercase;
     text-decoration: none;
     display: inline-block;
 }

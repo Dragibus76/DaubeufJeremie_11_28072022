@@ -1,0 +1,19 @@
+.main {
+    justify-content: center;
+    align-items: center;
+    padding-top: 70px;
+    gap: 40px;
+}
+
+.main svg {
+    width: 100%;
+}
+
+.main p {
+    font-size: calc(1.5rem + 1.2vw);
+}
+
+.link {
+    margin: auto 0 20px;
+    font-size: 18px;
+}

@@ -17,7 +17,7 @@
 }
 
 .banner h1 {
-    font-size: calc(1.75rem + 1.5vw);
+    font-size: 48px;
     font-weight: normal;
     color: var(--primary);
 }
